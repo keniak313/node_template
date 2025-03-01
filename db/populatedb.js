@@ -6,14 +6,14 @@ const { Client } = pg;
 
 //REPLACE WITH NEEDED DEFAULT DB VALUES
 const SQL = `
-CREATE TABLE IF NOT EXISTS usernames (
+CREATE TABLE IF NOT EXISTS <TABLE_NAME> (
     id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    username VARCHAR ( 255 )
+    <COLUMN_NAME> <DATA_TYPE> np. VARCHAR ( 255 ) lub DATA
 );
 
-INSERT INTO usernames (username)
+INSERT INTO <TABLE_NAME> (<COLUMN_NAME>, <COLUMN_NAME>)
 VALUES
-    ('Name1'),
+    ('Name1', 'Col2 val'),
     ('Name2');
 `
 
